@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .log{
+        height: 400px;
+      }
+    </style>
+</head>
+<body style="margin-top:100px; background-color: white;">
+  
+    <div class="log signup-form">
+       
+     
+        <h2>Login Page</h2>
+        <p>Please Enter your details to Login</p>
+        <hr />
+        <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                </span>
+              </div>
+              <input id="emailcheck" type="email" class="form-control" name="email" placeholder="Email Address" required="required"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+              </div>
+              <input id="passwordcheck" type="password" class="form-control" name="password" placeholder="Password" required="required"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <button  onclick="check()"  class="btn btn-primary btn-lg">
+              <span id="text">Login </span>
+              <div id="loader" style="display: none;" class="spinner-border" role="status">
+              </div>
+            </button>
+          </div>
+          <div class="form-group">
+            <button  onclick="back()"  class="btn btn-primary btn-lg">BACK TO SIGN UP</button>
+          </div>
+          <div style="display: none;"  id="error" class="alert alert-danger" role="alert">
+               Please Signup First
+          </div>
+          <div style="display: none;" id="success" class="alert alert-success" role="alert">
+            Login success 
+          </div>
+       
+        </div>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-stoarge.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB9Tux6FJtJPX0iuRbV4lXmqLodQjnhZ4k",
+    authDomain: "webclasspratice.firebaseapp.com",
+    databaseURL: "https://webclasspratice-default-rtdb.firebaseio.com",
+    projectId: "webclasspratice",
+    storageBucket: "webclasspratice.appspot.com",
+    messagingSenderId: "21360200331",
+    appId: "1:21360200331:web:38adc283069c1f0f3b628e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="app.js"></script>
+</body>
+</html>

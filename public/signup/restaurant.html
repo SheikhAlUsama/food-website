@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="sty.css"> -->
+<link rel="stylesheet" href="dash.css">
+</head>
+<body class="center">
+  <div class="container">
+    <nav class="navbar navbar-dark  " style="color:black;" >
+      <span style="margin: 0 auto; color: white; font-weight: bolder; font-size:30px " class="navbar-text">
+        RESTAURANT DASHBOARD
+      </span>
+    </nav>
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Add Item</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Accepted</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#references" role="tab" data-toggle="tab">Delivered</a>
+      </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="profile">...</div>
+      <div role="tabpanel" class="tab-pane fade" id="buzz">Panding...</div>
+      <div role="tabpanel" class="tab-pane fade" id="references">Delivered</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="mini">
+    <h1>ADD A DISH</h1>
+      <div class="form-group">
+        <label for="ItemName">Item Name</label>
+        <input type="text" class="form-control" id="item-name" aria-describedby="emailHelp" placeholder="Item Name">
+      </div>
+      <div class="form-group">
+        <label for="ItemName">Item Price</label>
+        <input type="text" class="form-control" id="item-price" aria-describedby="emailHelp" placeholder="Item Price">
+      </div>
+      <div class="form-group">
+        <label for="ItemName">Delivery Type</label>
+        <input type="text" class="form-control" id="delivery" aria-describedby="emailHelp" placeholder="Delivery Type">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Upload Item Picture</label>
+        <input type="file" class="form-control-file" id="image">
+      </div>
+     
+      <button onclick="addDish()" id="add" class="btn btn-primary">Submit</button>
+    </div>
+    <li class="nav-item">
+      <a style="color:black;" class="nav-link" href="../index.html">LOG OUT</a>
+    </li>
+  </div>
+  
+  
+
+
+
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-stoarge.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB9Tux6FJtJPX0iuRbV4lXmqLodQjnhZ4k",
+    authDomain: "webclasspratice.firebaseapp.com",
+    databaseURL: "https://webclasspratice-default-rtdb.firebaseio.com",
+    projectId: "webclasspratice",
+    storageBucket: "webclasspratice.appspot.com",
+    messagingSenderId: "21360200331",
+    appId: "1:21360200331:web:38adc283069c1f0f3b628e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="home.js"></script>
+      <script src="restaurant.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
